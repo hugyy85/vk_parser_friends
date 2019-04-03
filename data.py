@@ -7,7 +7,7 @@ class VkApiUse:
         self.user = user
         self.data = ''
         self.id = ''
-        self.token = 'f2c06642f2c06642f2c06642b1f2a8fb02ff2c0f2c06642aea143df69e80be92c61f917'
+        self.token = ''
 
     # connectinon to vk API
 
