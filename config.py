@@ -14,7 +14,7 @@ nickname = 'id11706070'
 
 big_database = 0
 
-# dstabase configuration
+# database configuration
 # create database MySQL and enter here your options
 user = 'root'
 password = 'toor'
