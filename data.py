@@ -1,4 +1,5 @@
 import requests, json
+from config import token
 
 
 class VkApiUse:
@@ -7,7 +8,7 @@ class VkApiUse:
         self.user = user
         self.data = ''
         self.id = ''
-        self.token = ''
+        self.token = token
 
     # connectinon to vk API
 
