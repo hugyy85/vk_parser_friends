@@ -7,6 +7,9 @@
 nickname = 'id11706070'
 ##########################################################################
 
+# You must need TOKEN VK to work with script
+token = '' 
+
 # if big_database = 1,
 # choose all friends of user to parse their friends. And make big
 # database of all friends. It is make A LOT OF TIME(more 1 hour) maybe
@@ -14,12 +17,12 @@ nickname = 'id11706070'
 
 big_database = 0
 
-# database configuration
+# dagittabase configuration
 # create database MySQL and enter here your options
 user = 'root'
-password = 'toor'
+password = ''
 db_name = 'vk'
 host = 'localhost'
 
-##########################################################################
+
 
