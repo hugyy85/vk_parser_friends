@@ -27,7 +27,10 @@ def add_group(country, city, contacts, user_id):
             contacts=contacts.lower().strip(),
             user_id=user_id
         )
-        row.save()
+        try:
+            row.save()
+        except:
+            pass
 
 
 def find_all_users():
@@ -53,10 +56,11 @@ def main(nickname):
     list_of_friends = []
     count = 0
     try:
+        dbhandle.close()
         dbhandle.connect()#connect to database
         Groups.drop_table()#del last table
         Info.drop_table()
-        Info.create_table()#create new table for new friend
+        Info.create_table()#create new table for new user
     except peewee.InternalError as px:
         print(str(px))
     try:
@@ -91,8 +95,6 @@ def main(nickname):
 
         end = time()
         print(f'This id {friend} has got {len(parsed_info)} friends and it worked {round(end-start, 2)} seconds')
-
-
 
 
 
